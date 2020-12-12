@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/idBackgroundApps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/apps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/logoLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:elevation="6dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@id/idButtonMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/idLogoBankSplash"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/idButtonMenu"
+        android:background="@drawable/shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingBottom="70dp"
+                android:paddingTop="20dp">
+
+                <Button
+                    android:id="@+id/idSignInLogin"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="320dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="95dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/button_press_green"
+                    android:text="Krijo llogarine"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/interregular"
+                    android:textColor="#FFF"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/idLoginSplash"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="320dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="95dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="Kycu"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/inter"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorAccent"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bar" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
